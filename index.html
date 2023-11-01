@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Products</h1>
+
+    <h3>Sort By Rating</h3>
+    <input id="all" type="radio" name="sort" value="all" checked /> All
+    <br />
+    <input type="radio" name="sort" value="3" /> Above 3
+    <br />
+    <input type="radio" name="sort" value="4" /> Above 4
+
+
+    <h3>Sort By</h3>
+    <input type="radio" name="sort-price" value="high" /> H To L
+    <br />
+    <input type="radio" name="sort-price" value="low" /> L To H
+
+
+    <h3>Sort By range</h3>
+    <input type="range" min="0" max="1000" value="0" id="range-input" />
+
+  </div>
+  <div id="productContainer"></div>
+</body>
+<script src="image.js"></script>
+
+</html>
